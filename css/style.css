@@ -19,10 +19,13 @@ body{
   "header"
   "main"
   "footer";
+  background: linear-gradient(to bottom, rgb(144, 3, 3), rgb(255, 255, 254));
 }
 
 img {
   max-width: 100%;
+  border-radius:  30% 30% 30% 30%;
+  animation: from 1.5s ease;
 }
 
 .container {
@@ -37,15 +40,17 @@ img {
 }
 
 header,nav,main,footer{
-  background-color: black;
-  color: white;
+  color: black;
   padding: 1rem;
 }
+
+
 
 /* Header */
 
 header{
   grid-area: header;
+  box-shadow: 0 0.5rem 1rem black;
 
 }
 
@@ -173,6 +178,7 @@ main ul li{
 
 footer{
   grid-area: footer;
+  box-shadow: 0 0.5rem 1rem black;
 }
 
 .footer__nav__list{
@@ -188,6 +194,18 @@ footer ul li{
 
 footer p{
   padding: 1rem;
+}
+
+
+@keyframes from {
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @media (min-width: 768px){
