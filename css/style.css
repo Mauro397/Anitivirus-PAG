@@ -7,7 +7,6 @@
 }
 
 body{
-  background-color: aqua;
   margin: 0;
   padding: 1rem;
   display: grid;
@@ -19,7 +18,7 @@ body{
   "header"
   "main"
   "footer";
-  background: linear-gradient(to bottom, rgb(144, 3, 3), rgb(255, 255, 254));
+  background: linear-gradient(to bottom, rgb(144, 3, 3), rgb(128, 128, 127));
 }
 
 img {
@@ -43,6 +42,24 @@ header,nav,main,footer{
   color: black;
   padding: 1rem;
 }
+
+main h1,h4,p{
+
+  animation: from 1.5s ease;
+}
+
+footer h3,li{
+  animation: from 1.5s ease;
+}
+
+table{
+  animation: from 1.5s ease;
+}
+
+fieldset{
+  animation: from 1.5s ease;
+}
+
 
 
 
