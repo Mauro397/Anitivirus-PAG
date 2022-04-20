@@ -118,6 +118,11 @@ footer img{
     max-height: 10rem;
 }
 
+.text-decoration{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Animaciones */
 @keyframes from {
