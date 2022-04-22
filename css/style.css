@@ -18,21 +18,21 @@ img{
 }
 
 main h1,h4,p{
-
-  animation: from 1.5s ease;
+    animation: from 1.5s ease;
 }
 
 footer h3,li{
-  animation: from 1.5s ease;
+    animation: from 1.5s ease;
 }
 
 table{
-  animation: from 1.5s ease;
+    animation: from 1.5s ease;
 }
 
-fieldset{
-  animation: from 1.5s ease;
+form{
+    animation: from 1.5s ease;
 }
+
 
 
 
@@ -42,6 +42,7 @@ main h1,h4,p{
 
 main ul li{
     animation: from 1.5s ease;
+    padding-bottom: 2rem;
 }
 
 
@@ -55,8 +56,8 @@ fieldset{
     margin-bottom: 6rem;
 }
 
-footer img{
-    padding-left: 2rem;
+footer ul {
+    padding-right: 2rem;
 }
 
 
@@ -75,6 +76,12 @@ footer img{
     padding: 8rem 0 0 0;
 }
 
+.table-icon{
+    height: auto;
+    width: auto;
+    max-width: 3rem;
+    max-height: 3rem;
+}
 
 
 .mar-table{
@@ -93,6 +100,7 @@ footer img{
 
 .font-sice{
     font-size: 1.5rem;
+
 }
 
 .footer-padding{
@@ -122,7 +130,6 @@ footer img{
     text-decoration: none;
     color: white;
 }
-
 
 /* Animaciones */
 @keyframes from {
