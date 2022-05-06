@@ -1,0 +1,219 @@
+/* Main */
+.navHAM{
+    background: linear-gradient(to right, rgb(76, 76, 76),#1f016b);
+}
+
+.first-section{
+    padding: 8rem 0 0 0;
+}
+
+.table-icon{
+    height: auto;
+    width: auto;
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+/* Mixin */
+@mixin caja($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+    margin-bottom: 50px;
+    
+}
+.box {
+    @include caja(250px, 270px, rgba(244, 237, 237, 0.145));
+}
+.box2 {
+    @include caja(250px, 360px, rgba(112, 50, 245, 0.164));
+}
+.box3{
+    @include caja(250px, 210px, rgba(244, 237, 237, 0.145))
+}
+
+/* Fin mixin */
+
+/* Maps */
+$buttom:(
+    rojo: #ff0000,
+    azul: #3a5795,
+    verde: #50c230,
+    amarillo: #f9ff41
+);
+
+@each $buttomcolors, $color in $buttom {
+    .btn--#{$buttomcolors}{
+        background-color: $color;
+    } 
+}
+
+$estilos:(
+    color: rgb(253, 74, 74),
+    centrar:center,
+    tfuente: 35px,
+    1rem : 1rem
+);
+
+/* Maps-get() */
+h2{
+    color:map-get($estilos, color);
+    text-align:map-get($estilos , centrar);
+    padding: map-get($estilos, 1rem );
+    font-size: map-get($estilos, tfuente );
+}
+
+/* Fin maps */
+
+/* Extend */
+.buttomcolors{
+    background-color: #ff41fc;
+}
+.buttomcolors--nuevo{
+    @extend .buttomcolors;
+}
+
+/* Fin extend */
+
+.testimonials {
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgb(255, 245, 245);
+    transition: 0.3s;
+    border-radius: 5px;
+    transition:0.5s all;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    margin-bottom: 3rem;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.01);
+    }
+
+    span{
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20%;
+        
+    }
+
+}
+
+.c-title{
+        color: rgb(255, 254, 254);
+        font-size: 20px;
+        justify-self: center;
+        padding: 0.3rem;
+    }
+
+.description{
+
+    p{
+    padding: 2px 16px;
+    font-size: 18px;
+    line-height: 1.3rem;
+    color: white;
+    }
+
+    button{
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 20px;
+
+    &:hover{
+        transform: scale(1.01);
+        color: rgb(113, 113, 219);
+    }
+}
+}
+.description .fa{
+    margin-top: 1rem;
+}
+
+.fa{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: 0.5s all;
+    color: rgb(100, 120, 132);
+
+    &:hover{
+        color:rgb(108,110,112);
+    }
+}
+
+.sectionn-div-box{
+    margin: auto;
+    max-width: 300px;
+    box-shadow: 0 1px 30px -10px rgb(252, 252, 252);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.mar-table{
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.img-dowload{
+    height: auto;
+    width: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.font-sice{
+    font-size: 1.5rem;
+
+}
+
+main{
+    h1{
+        animation: from 1.5s ease; 
+    }
+    h2{
+        animation: from 1.5s ease;
+    }
+    h3{
+        animation: from 1.5s ease;
+    }
+    h4{
+        animation: from 1.5s ease;
+    }
+    p{
+        animation: from 1.5s ease;
+    }
+
+    ul{
+        li{
+            animation: from 1.5s ease;
+            padding-bottom: 2rem;
+        }
+    }
+
+}
+/*Fin Main */
