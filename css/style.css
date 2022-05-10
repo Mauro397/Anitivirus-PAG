@@ -23,6 +23,13 @@
   max-height: 3rem;
 }
 
+.img-box {
+  height: auto;
+  width: auto;
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
 /* Mixin */
 .box {
   width: 250px;
@@ -203,6 +210,31 @@ main p {
 main ul li {
   animation: from 1.5s ease;
   padding-bottom: 2rem;
+}
+
+.section-p {
+  overflow: hidden;
+  max-height: 0;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(80, 5, 219);
+  transition: all;
+}
+
+.section-a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid gray;
+}
+
+section:target p {
+  max-height: 150px;
+  padding: 5px;
 }
 
 /*Fin Main */
