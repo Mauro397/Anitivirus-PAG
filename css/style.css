@@ -1,4 +1,5 @@
 /* Header */
+@import url(https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap);
 .header-icon-title {
   height: auto;
   width: auto;
@@ -33,29 +34,29 @@
 /* Mixin */
 .box {
   width: 250px;
-  height: 270px;
+  height: 360px;
   background-color: rgba(244, 237, 237, 0.145);
-  margin-bottom: 50px;
+  margin-bottom: 6rem;
 }
 
 .box2 {
   width: 250px;
   height: 360px;
   background-color: rgba(112, 50, 245, 0.164);
-  margin-bottom: 50px;
+  margin-bottom: 6rem;
 }
 
 .box3 {
   width: 250px;
-  height: 210px;
+  height: 360px;
   background-color: rgba(244, 237, 237, 0.145);
-  margin-bottom: 50px;
+  margin-bottom: 6rem;
 }
 
 /* Fin mixin */
 /* Maps */
 .btn--rojo {
-  background-color: #ff0000;
+  background-color: #654dec;
 }
 
 .btn--azul {
@@ -63,16 +64,16 @@
 }
 
 .btn--verde {
-  background-color: #50c230;
+  background-color: #ffffff;
 }
 
 .btn--amarillo {
-  background-color: #f9ff41;
+  background-color: #0a0091;
 }
 
 /* Maps-get() */
 h2 {
-  color: rgb(253, 74, 74);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1rem;
   font-size: 35px;
@@ -81,7 +82,7 @@ h2 {
 /* Fin maps */
 /* Extend */
 .buttomcolors, .buttomcolors--nuevo {
-  background-color: #ff41fc;
+  background-color: rgba(59, 4, 59, 0.9921568627);
 }
 
 /* Fin extend */
@@ -135,8 +136,7 @@ h2 {
   color: white;
 }
 .description button {
-  margin-top: 1.5rem;
-  margin-bottom: 0.4rem;
+  justify-items: flex-end;
   border: none;
   outline: 0;
   display: inline-block;
@@ -170,6 +170,7 @@ h2 {
 
 .sectionn-div-box {
   margin: auto;
+  margin-top: 4rem;
   max-width: 300px;
   box-shadow: 0 1px 30px -10px rgb(252, 252, 252);
   text-align: center;
@@ -237,6 +238,10 @@ section:target p {
   padding: 5px;
 }
 
+.margin-label {
+  margin: 1rem;
+}
+
 /*Fin Main */
 /* Footer */
 footer ul {
@@ -260,7 +265,8 @@ footer h3 {
   max-width: 300px;
   box-shadow: 0 1px 30px -10px rgb(248, 245, 245);
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .footer-icon-title {

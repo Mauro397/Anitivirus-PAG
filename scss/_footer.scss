@@ -1,49 +1,50 @@
 /* Footer */
-footer{
-    ul{
-        animation: from 1.5s ease;
-        padding-right: 2rem;
-    }
-    
-    h3{
-        animation:from 1.5s ease;
-    }
+footer {
+  ul {
+    animation: from 1.5s ease;
+    padding-right: 2rem;
+  }
+
+  h3 {
+    animation: from 1.5s ease;
+  }
 }
 
-.footer-padding{
-    padding: 1rem;
+.footer-padding {
+  padding: 1rem;
 }
 
-.footer-title-padding{
-    padding: 3rem;
+.footer-title-padding {
+  padding: 3rem;
 }
 
-.footer-div-box{
-    margin: auto;
-    max-width: 300px;
-    box-shadow: 0 1px 30px -10px rgb(248, 245, 245);
-    text-align: center;
-    margin-bottom: 3rem;
+.footer-div-box {
+  margin: auto;
+  max-width: 300px;
+  box-shadow: 0 1px 30px -10px rgb(248, 245, 245);
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
-.footer-icon-title{
-    height: auto;
-    width: auto;
-    max-width: 4rem;
-    max-height: 4rem;
+.footer-icon-title {
+  height: auto;
+  width: auto;
+  max-width: 4rem;
+  max-height: 4rem;
 }
 
-.text-decoration{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+.text-decoration {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.padding{
-    padding-bottom: 2rem;
+.padding {
+  padding-bottom: 2rem;
 }
 
-.margin{
-    margin-bottom: 3rem;
+.margin {
+  margin-bottom: 3rem;
 }
 /* Fin footer */
