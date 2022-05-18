@@ -224,13 +224,13 @@ main {
   text-align: justify;
   font-family: "Courier New", Courier, monospace;
   background-color: rgb(80, 5, 219);
-  transition: all;
+  transition: all 0.2s ease-in-out;
 }
 
 .section-a {
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   font-family: "Courier New", Courier, monospace;
   background-color: black;
@@ -240,7 +240,7 @@ main {
 
 section:target p {
   max-height: 150px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .margin-label {

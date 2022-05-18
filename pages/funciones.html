@@ -1,262 +1,618 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AntivirusWebFuncional</title>
     <!-- Boostrap CSS-->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="../css/style.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- PALABRAS CLASVES -->
     <meta
-        name="keiwords"
-        content="html,css,bosstrap,javascript,svg,desarrollador,web,antivirus,github,caracteristicas,tipos,malo,bueno,mauro eusebio palma"
-    >
+      name="keiwords"
+      content="html,css,bosstrap,javascript,svg,desarrollador,web,antivirus,github,caracteristicas,tipos,malo,bueno,mauro eusebio palma"
+    />
     <!-- DESCRIPCION -->
     <meta
-    name="description"
-    content="Funciones, pagina especializada en mostrar si poseé o no tal caracteristica y si es buena o no."
-    >
-
-</head>
-<body>
+      name="description"
+      content="Funciones, pagina especializada en mostrar si poseé o no tal caracteristica y si es buena o no."
+    />
+  </head>
+  <body>
     <!-- Cabecera -->
     <header>
-    <!--NAV BAR-->
-        <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top navHAM">
-            <div class="container">
-                <a class="navbar-brand" href="/"
-                    ><h1 class="animate__animated animate__backInDown">Mi Antivirus</h1></a>
-                    <img class="header-icon-title" src="../imagenes/I-M-A.png" alt="Simbolo correcto rodeado de un circulo">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+      <!--NAV BAR-->
+      <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top navHAM">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><h1 class="animate__animated animate__backInDown">
+              Mi Antivirus
+            </h1></a
+          >
+          <img
+            class="header-icon-title"
+            src="../imagenes/I-M-A.png"
+            alt="Simbolo correcto rodeado de un circulo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end animate__animated animate__backInDown"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse justify-content-end animate__animated animate__backInDown"
-                    id="navbarNav"
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/funciones.html"
+                  >Funciones</a
                 >
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2">
-                            <a
-                            class="nav-link text-white fw-bolder"
-                            aria-current="page"
-                            href="../index.html"
-                            >Inicio</a
-                            >
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/funciones.html"
-                            >Funciones</a
-                            >
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/descargar.html">Descargar</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/ayuda.html">Ayuda</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/descargar.html"
+                  >Descargar</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/ayuda.html"
+                  >Ayuda</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Cuadro de especificaciones -->
     <main>
-        <section id="home" class="container-fluid first-section">
-            <div class="container">
-                <div class="row align-items-center text-white mar-table">
-                    <h2 class="text-center margin">Caracteristicas de cada Antivirus</h2>
-                    <div class="col-md-6 intros">
-                        <ul class="font-sice">
-                            <li><img src="../imagenes/avast2.png" alt=""> AVAST FREE ANTIVIRUS</li>
-                            <li><img src="../imagenes/panda.png" alt=""> PANDA ANTIVIRUS</li>
-                            <li><img src="../imagenes/avg2.png" alt=""> AVG FREE ANTIVIRUS</li>
-                            <li><img src="../imagenes/virus2.png" alt=""> AVIRA FREE ANTIVIRUS</li>
-                            <li><img src="../imagenes/bitdefender2.png" alt=""> BITDEFENDER ANTIVIRUS</li>
-                            <li><img src="../imagenes/kaspersky2.png" alt=""> KASPERSKY ANTIVIRUS</li>
-                            <li><img src="../imagenes/windows.png" alt=""> WINDOWS DEFENDER</li>
-                        </ul> 
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <table class="table text-white">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Comparacion</th>
-                                    <th scope="col">Bueno</th>
-                                    <th scope="col">Malo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row">1</th>
-                                    <td>Malware</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                                <tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                    <td>Adware</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                    <td>Filware</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                                <tr>
-                                <th scope="row">4</th>
-                                    <td>Spyware</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                <tr>
-                                <th scope="row">5</th>
-                                    <td>Troyanos</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                <tr>
-                                <th scope="row">6</th>
-                                    <td>Botnet</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                                <tr>
-                                <th scope="row">7</th>
-                                    <td>Rootkit</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                                <tr>
-                                <th scope="row">8</th>
-                                    <td>Gusano</td>
-                                    <td><img class="table-icon" src="../imagenes/correcto.png" alt="simbolo de correcto"></td>
-                                    <td><img class="table-icon" src="../imagenes/incorrecto.png" alt="simbolo de incorrecto"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+      <section id="home" class="container-fluid first-section">
+        <div class="container">
+          <div class="row align-items-center text-white mar-table">
+            <h2 class="text-center margin">
+              Caracteristicas de cada Antivirus
+            </h2>
+            <div class="col-md-6 intros">
+              <ul class="font-sice">
+                <li>
+                  <img src="../imagenes/avast2.png" alt="" /> AVAST FREE
+                  ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/panda.png" alt="" /> PANDA ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/avg2.png" alt="" /> AVG FREE ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/virus2.png" alt="" /> AVIRA FREE
+                  ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/bitdefender2.png" alt="" /> BITDEFENDER
+                  ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/kaspersky2.png" alt="" /> KASPERSKY
+                  ANTIVIRUS
+                </li>
+                <li>
+                  <img src="../imagenes/windows.png" alt="" /> WINDOWS DEFENDER
+                </li>
+              </ul>
             </div>
-        </section>
-        
-        <section>
-            <div class="container">
-                <div class="row text-white margin">
-                    <h2 class="text-center margin">¿Que caracterista tiene cada virus que enunciamos?</h2>
-                    <section id="Description1">
-                    <a class="section-a" href="#Description1">Malware</a>
-                    <p class="section-p">La intención del malware es sacarle dinero al usuario ilícitamente. Aunque el malware no puede dañar el hardware de los sistemas o el equipo de red —con una excepción que se conozca (vea la sección Android de Google)—, sí puede robar, cifrar o borrar sus datos, alterar o secuestrar funciones básicas del ordenador y espiar su actividad en el ordenador sin su conocimiento o permiso.</p>
-                    </section>
-                    
-                    <section id="Description2">
-                    <a class="section-a" href="#Description2">Adware</a>
-                    <p class="section-p">El adware es un software no deseado diseñado para mostrar anuncios en su pantalla, normalmente en un explorador. Algunos profesionales de la seguridad lo ven como un precursor de los PUP (programas potencialmente no deseados) de hoy en día. Normalmente, recurre a un método subrepticio: bien se hace pasar por legítimo, o bien mediante piggyback en otro programa para engañarlo e instalarse en su PC, tableta o dispositivo móvil.</p>
-                    </section>
-                    
-                    <section id="Description3">
-                    <a class="section-a" href="#Description3">Spyware</a>
-                    <p class="section-p">El spyware es un tipo de malware que intenta mantenerse oculto mientras registra información en secreto y sigue sus actividades en línea, tanto en equipos como en dispositivos móviles. Puede supervisar y copiar todo lo que escribe, carga, descarga y almacena. Algunas cepas de spyware también son capaces de activar cámaras y micrófonos para verlo y escucharlo sin que usted se dé cuenta.</p>
-                    </section>
 
-                    <section id="Description4">
-                    <a class="section-a" href="#Description4">Troyanos</a>
-                    <p class="section-p">Generalmente, los troyanos están adjuntos a un programa que parece legítimo, pero que, en realidad, es una versión falsa de la aplicación cargada con software malicioso. Estos cibercriminales suelen colocar los troyanos en mercados de aplicaciones piratas o no oficiales para que los descarguen los usuarios confiados.</p>
-                    </section>
+            <div class="col-md-6">
+              <table class="table text-white">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Comparacion</th>
+                    <th scope="col">Bueno</th>
+                    <th scope="col">Malo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Malware</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Adware</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Filware</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Spyware</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
 
-                    <section id="Description5">
-                    <a class="section-a" href="#Description5">Botnet</a>
-                    <p class="section-p">Una botnet es una red de equipos informáticos que han sido infectados con software malicioso que permite su control remoto, obligándoles a enviar spam, propagar virus o realizar ataques de denegación de servicio distribuido (DDoS) sin el conocimiento o el consentimiento de los propietarios reales de los equipos.</p>
-                    </section>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Troyanos</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
 
-                    <section id="Description6">
-                    <a class="section-a" href="#Description6">Rootkit</a>
-                    <p class="section-p">Un rootkit es un sigiloso y peligroso tipo de malware que permite a los hackers acceder a su equipo sin su conocimiento. Afortunadamente, incluso estos fragmentos de software casi invisibles pueden ser encontrados y eliminados. Obtenga información sobre los diferentes tipos de rootkits, cómo detectarlos y cómo eliminarlos de su dispositivo con un analizador de rootkits inteligente como Avast Free Antivirus.</p>
-                    </section>
-
-                    <section id="Description7">
-                    <a class="section-a" href="#Description7">Gusano</a>
-                    <p class="section-p">Los gusanos son en realidad una subclase de virus, por lo que comparten características. Son programas que realizan copias de sí mismos, alojándolas en diferentes ubicaciones del ordenador.
-                        El objetivo de este malware suele ser colapsar los ordenadores y las redes informáticas, impidiendo así el trabajo a los usuarios. A diferencia de los virus, los gusanos no infectan archivos.</p>
-                    </section>
-
-                </div>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Botnet</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Rootkit</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Gusano</td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/correcto.png"
+                        alt="simbolo de correcto"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        class="table-icon"
+                        src="../imagenes/incorrecto.png"
+                        alt="simbolo de incorrecto"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container margin">
+          <div class="row">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingOne"
+                >
+                  <button
+                    class="accordion-button bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    <p class="text-white text-center">Malware</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      La intención del malware es sacarle dinero al usuario
+                      ilícitamente. Aunque el malware no puede dañar el hardware
+                      de los sistemas o el equipo de red —con una excepción que
+                      se conozca (vea la sección Android de Google)—, sí puede
+                      robar, cifrar o borrar sus datos, alterar o secuestrar
+                      funciones básicas del ordenador y espiar su actividad en
+                      el ordenador sin su conocimiento o permiso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingTwo"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    <p class="text-white">Adware</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      El adware es un software no deseado diseñado para mostrar
+                      anuncios en su pantalla, normalmente en un explorador.
+                      Algunos profesionales de la seguridad lo ven como un
+                      precursor de los PUP (programas potencialmente no
+                      deseados) de hoy en día. Normalmente, recurre a un método
+                      subrepticio: bien se hace pasar por legítimo, o bien
+                      mediante piggyback en otro programa para engañarlo e
+                      instalarse en su PC, tableta o dispositivo móvil.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingThree"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    <p class="text-white">Spyware</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      El spyware es un tipo de malware que intenta mantenerse
+                      oculto mientras registra información en secreto y sigue
+                      sus actividades en línea, tanto en equipos como en
+                      dispositivos móviles. Puede supervisar y copiar todo lo
+                      que escribe, carga, descarga y almacena. Algunas cepas de
+                      spyware también son capaces de activar cámaras y
+                      micrófonos para verlo y escucharlo sin que usted se dé
+                      cuenta.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingFour"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour"
+                  >
+                    <p class="text-white">Troyanos</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      Generalmente, los troyanos están adjuntos a un programa
+                      que parece legítimo, pero que, en realidad, es una versión
+                      falsa de la aplicación cargada con software malicioso.
+                      Estos cibercriminales suelen colocar los troyanos en
+                      mercados de aplicaciones piratas o no oficiales para que
+                      los descarguen los usuarios confiados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingFive"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive"
+                  >
+                    <p class="text-white">Botnet</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFive"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      Una botnet es una red de equipos informáticos que han sido
+                      infectados con software malicioso que permite su control
+                      remoto, obligándoles a enviar spam, propagar virus o
+                      realizar ataques de denegación de servicio distribuido
+                      (DDoS) sin el conocimiento o el consentimiento de los
+                      propietarios reales de los equipos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingSix"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix"
+                  >
+                    <p class="text-white">Rookit</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSix"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      Un rootkit es un sigiloso y peligroso tipo de malware que
+                      permite a los hackers acceder a su equipo sin su
+                      conocimiento. Afortunadamente, incluso estos fragmentos de
+                      software casi invisibles pueden ser encontrados y
+                      eliminados. Obtenga información sobre los diferentes tipos
+                      de rootkits, cómo detectarlos y cómo eliminarlos de su
+                      dispositivo con un analizador de rootkits inteligente como
+                      Avast Free Antivirus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark bg-gradient">
+                <h2
+                  class="accordion-header bg-dark bg-gradient"
+                  id="panelsStayOpen-headingSeven"
+                >
+                  <button
+                    class="accordion-button collapsed bg-dark bg-gradient"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSeven"
+                  >
+                    <p class="text-white">Gusano</p>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSeven"
+                >
+                  <div class="accordion-body">
+                    <p class="text-white">
+                      Los gusanos son en realidad una subclase de virus, por lo
+                      que comparten características. Son programas que realizan
+                      copias de sí mismos, alojándolas en diferentes ubicaciones
+                      del ordenador. El objetivo de este malware suele ser
+                      colapsar los ordenadores y las redes informáticas,
+                      impidiendo así el trabajo a los usuarios. A diferencia de
+                      los virus, los gusanos no infectan archivos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Pie de pagina -->
-    <footer class="bg-gradient">         
-        <div class="container">
-            <div class="row footer-padding text-white">
-                <div class="footer-div-box" >
-                    <div><img class="" src="../imagenes/gmail.png" alt="icono con forma de M"></div>
-                    <ul>
-                        <li>mauri4@outlook.com.ar</li>
-                        <li>mauri4.mp1@gmail.com</li>
-                        <li>jorgepalma2154@gmail.com</li>
-                    </ul> 
-                </div>        
-                <div class="footer-div-box">
-                    <img src="../imagenes/facebook.png" alt="icono con una letra F">
-                    <img src="../imagenes/twitter.png" alt="icono de un pajaro">
-                    <img src="../imagenes/instagram.png" alt="icono de una camara">
-                    <ul>
-                        <li>www.facebook.com</li>
-                        <li>www.twitter.com</li>
-                        <li>www.instagram.com</li>
-                    </ul>
-                </div>
-                <div class="footer-div-box">
-                    <img src="../imagenes/otros.png" alt="icono abstracto">
-                    <ul> 
-                        <li>Aviso legal</li>
-                        <li>Politicas de Privacidad</li>
-                        <li>Politicas de Cookies</li>
-                    </ul> 
-                </div>
+    <footer class="bg-gradient">
+      <div class="container">
+        <div class="row footer-padding text-white">
+          <div class="footer-div-box">
+            <div>
+              <img
+                class=""
+                src="../imagenes/gmail.png"
+                alt="icono con forma de M"
+              />
             </div>
-        </div>   
-        <div class="container padding">
-            <div class="row align-items-center text-center justify-content-center">
-                <div class="col-lg-2 col-md-12">
-                    <h3><a class="text-decoration" href="../index.html">Mi Antivirus</a></h3>                                           
-                </div>
-                <div class="col-lg-1 col-md-12">
-                    <img class="footer-icon-title" src="../imagenes/I-M-A.png" alt="Simbolo correcto rodeado de un circulo"> 
-                </div>
-            </div>
+            <ul>
+              <li>mauri4@outlook.com.ar</li>
+              <li>mauri4.mp1@gmail.com</li>
+              <li>jorgepalma2154@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer-div-box">
+            <img src="../imagenes/facebook.png" alt="icono con una letra F" />
+            <img src="../imagenes/twitter.png" alt="icono de un pajaro" />
+            <img src="../imagenes/instagram.png" alt="icono de una camara" />
+            <ul>
+              <li>www.facebook.com</li>
+              <li>www.twitter.com</li>
+              <li>www.instagram.com</li>
+            </ul>
+          </div>
+          <div class="footer-div-box">
+            <img src="../imagenes/otros.png" alt="icono abstracto" />
+            <ul>
+              <li>Aviso legal</li>
+              <li>Politicas de Privacidad</li>
+              <li>Politicas de Cookies</li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="container padding">
+        <div class="row align-items-center text-center justify-content-center">
+          <div class="col-lg-2 col-md-12">
+            <h3>
+              <a class="text-decoration" href="../index.html">Mi Antivirus</a>
+            </h3>
+          </div>
+          <div class="col-lg-1 col-md-12">
+            <img
+              class="footer-icon-title"
+              src="../imagenes/I-M-A.png"
+              alt="Simbolo correcto rodeado de un circulo"
+            />
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
-        <!-- Boostrap JS -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
-</body>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
