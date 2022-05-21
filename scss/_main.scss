@@ -42,10 +42,10 @@
 
 /* Maps */
 $buttom: (
-  rojo: #654dec,
-  azul: #3a5795,
-  verde: #ffffff,
-  amarillo: #0a0091,
+  violeta: #654dec,
+  azulclaro: #3a5795,
+  blanco: #ffffff,
+  azuloscuro: #0a0091,
 );
 
 @each $buttomcolors, $color in $buttom {
@@ -171,7 +171,7 @@ h2 {
 .sectionn-div-box {
   margin: auto;
   margin-top: 4rem;
-  max-width: 300px;
+  max-width: 350px;
   box-shadow: 0 1px 30px -10px rgb(252, 252, 252);
   text-align: center;
   margin-bottom: 5rem;

@@ -55,19 +55,19 @@
 
 /* Fin mixin */
 /* Maps */
-.btn--rojo {
+.btn--violeta {
   background-color: #654dec;
 }
 
-.btn--azul {
+.btn--azulclaro {
   background-color: #3a5795;
 }
 
-.btn--verde {
+.btn--blanco {
   background-color: #ffffff;
 }
 
-.btn--amarillo {
+.btn--azuloscuro {
   background-color: #0a0091;
 }
 
@@ -171,7 +171,7 @@ h2 {
 .sectionn-div-box {
   margin: auto;
   margin-top: 4rem;
-  max-width: 300px;
+  max-width: 350px;
   box-shadow: 0 1px 30px -10px rgb(252, 252, 252);
   text-align: center;
   margin-bottom: 5rem;

@@ -1,198 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AntivirusWebAyuda</title>
     <!-- Boostrap CSS-->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="../css/style.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- PALABRAS CLASVES -->
     <meta
-        name="keiwords"
-        content="html,css,bosstrap,javascript,svg,desarrollador,web,antivirus,github,ayuda,contacto,mauro eusebio palma"
-    >
+      name="keiwords"
+      content="html,css,bosstrap,javascript,svg,desarrollador,web,antivirus,github,ayuda,contacto,mauro eusebio palma"
+    />
     <!-- DESCRIPCION -->
     <meta
-    name="description"
-    content="Pagina web de apartado comunitativo entre el visitante con los creadores de la pagina o ayudantes."
-    >
-
-</head>
-<body>
+      name="description"
+      content="Pagina web de apartado comunitativo entre el visitante con los creadores de la pagina o ayudantes."
+    />
+  </head>
+  <body>
     <!-- Cabecera -->
     <header>
-    <!--NAV BAR-->
-        <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top navHAM">
-            <div class="container">
-                <a class="navbar-brand" href="/"
-                    ><h1 class="animate__animated animate__backInDown">Mi Antivirus</h1></a>
-                    <img class="header-icon-title" src="../imagenes/I-M-A.png" alt="Simbolo correcto rodeado de un circulo">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+      <!--NAV BAR-->
+      <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top navHAM">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><h1 class="animate__animated animate__backInDown">
+              Mi Antivirus
+            </h1></a
+          >
+          <img
+            class="header-icon-title"
+            src="../imagenes/I-M-A.png"
+            alt="Simbolo correcto rodeado de un circulo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end animate__animated animate__backInDown"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse justify-content-end animate__animated animate__backInDown"
-                    id="navbarNav"
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/funciones.html"
+                  >Funciones</a
                 >
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2">
-                            <a
-                            class="nav-link text-white fw-bolder"
-                            aria-current="page"
-                            href="../index.html"
-                            >Inicio</a
-                            >
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/funciones.html"
-                            >Funciones</a
-                            >
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/descargar.html">Descargar</a>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link text-white fw-bolder" href="../pages/ayuda.html">Ayuda</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/descargar.html"
+                  >Descargar</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  href="../pages/ayuda.html"
+                  >Ayuda</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Cuadro de ayuda -->
     <main>
-        <div class="container d-flex justify-content-around p-5">
-            <div class="row first-section">
-                <div class="form p-5 col-sm-12 col-md-6 col-lg-6 bg-transparent text-white">
-                    <div>
-                        <label for class="form-label">Nombre</label>
-                        <input type="nombre" class="form-control margin-label" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <label for class="form-label">Apellido</label>
-                        <input type="apellido" class="form-control margin-label" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <label for class="form-label">Escribanos</label>
-                        <textarea class="form-control margin-label" rows="5"></textarea>
-                    </div>
-                    <input class="btn bg-white border margin-label" type="submit" name="Enviar">
-                    <input class="btn bg-white border margin-label" type="reset" name="Resetear">
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <img class="img-fluid" src="../imagenes/Ayuda.png" alt="figura de una mujer que trabaja en comunicaciones">
-                </div> 
+      <div class="container d-flex justify-content-around p-5">
+        <div class="row first-section">
+          <div
+            class="form col-sm-12 col-md-6 col-lg-6 bg-transparent text-white"
+          >
+            <div>
+              <label for class="form-label">Nombre</label>
+              <input
+                type="nombre"
+                class="form-control margin-label"
+                placeholder="Nombre"
+              />
             </div>
+            <div>
+              <label for class="form-label">Apellido</label>
+              <input
+                type="apellido"
+                class="form-control margin-label"
+                placeholder="Apellido"
+              />
+            </div>
+            <div>
+              <label for class="form-label">Escribanos</label>
+              <textarea class="form-control margin-label" rows="5"></textarea>
+            </div>
+            <input
+              class="btn bg-white border margin-label"
+              type="submit"
+              name="Enviar"
+            />
+            <input
+              class="btn bg-white border margin-label"
+              type="reset"
+              name="Resetear"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-6 col-md-6">
+            <img
+              class="img-fluid"
+              src="../imagenes/Ayuda.png"
+              alt="figura de una mujer que trabaja en comunicaciones"
+            />
+          </div>
         </div>
-        
-        <section class="container-fluid">
-            <div class="container">
-                <div class="row text-white justify-content-center">
-                    <h2 class="margin">Apartado enfocado a facilitar contactos de soporte tecnico, atencion tanto publica como privada. 
-                    </h2>
-                    <div class="box">
-                        <h3 class="text-center">Soporte Tecnico</h3>
-                        <div class="text-center"><img src="../imagenes/contacto.png" alt=" logo de persona"></div>
-                        <ul>
-                            <li><img src="../imagenes/whatsapp.png" alt=" logo de whatsapp"> 02320422605</li>
-                            <li><img src="../imagenes/telefono.png" alt=" logo de telefono"> 08104206345</li>
-                            <li><img src="../imagenes/celular.png" alt=" logo de celular">11512341541</li>
-                        </ul>
-                    </div>
-                    <div class="box2">
-                        <h3 class="text-center">Contacto Atencion publica</h3>
-                        <div class="text-center"><img src="../imagenes/contacto3.png" alt=" logo de persona"></div>
-                        <ul>
-                            <li><img src="../imagenes/telefono.png" alt=" logo de telefono"> 1231413132121</li>
-                            <li><img src="../imagenes/celular.png" alt=" logod de celular"> 1231321312131</li>
-                            <li><img src="../imagenes/telefono.png" alt=" logo de telefono"> 5213131351231</li>
-                            <li><img src="../imagenes/celular.png" alt=" logo de celular"> 1231341243123</li>
-                        </ul>
-                    </div>
-                    <div class="box3"> 
-                        <h3 class="text-center">Contacto atencion privada(Paga)</h3>
-                        <div class="text-center"><img src="../imagenes/contacto2.png" alt=" logo de persona"></div>
-                        <ul>
-                            <li><img src="../imagenes/privade.png" alt=" logo de auricular"> 0810-422-605</li>
-                        </ul>
-                    </div>
-                </div>
+      </div>
+
+      <section class="container-fluid">
+        <div class="container">
+          <div class="row text-white justify-content-center">
+            <h2 class="margin">
+              Apartado enfocado a facilitar contactos de soporte tecnico,
+              atencion tanto publica como privada.
+            </h2>
+            <div class="box">
+              <h3 class="text-center">Soporte Tecnico</h3>
+              <div class="text-center">
+                <img src="../imagenes/contacto.png" alt=" logo de persona" />
+              </div>
+              <ul>
+                <li>
+                  <img src="../imagenes/whatsapp.png" alt=" logo de whatsapp" />
+                  02320422605
+                </li>
+                <li>
+                  <img src="../imagenes/telefono.png" alt=" logo de telefono" />
+                  08104206345
+                </li>
+                <li>
+                  <img
+                    src="../imagenes/celular.png"
+                    alt=" logo de celular"
+                  />11512341541
+                </li>
+              </ul>
             </div>
-        </section>
-
-
+            <div class="box2">
+              <h3 class="text-center">Contacto Atencion publica</h3>
+              <div class="text-center">
+                <img src="../imagenes/contacto3.png" alt=" logo de persona" />
+              </div>
+              <ul>
+                <li>
+                  <img src="../imagenes/telefono.png" alt=" logo de telefono" />
+                  1231413132121
+                </li>
+                <li>
+                  <img src="../imagenes/celular.png" alt=" logod de celular" />
+                  1231321312131
+                </li>
+                <li>
+                  <img src="../imagenes/telefono.png" alt=" logo de telefono" />
+                  5213131351231
+                </li>
+                <li>
+                  <img src="../imagenes/celular.png" alt=" logo de celular" />
+                  1231341243123
+                </li>
+              </ul>
+            </div>
+            <div class="box3">
+              <h3 class="text-center">Contacto atencion privada(Paga)</h3>
+              <div class="text-center">
+                <img src="../imagenes/contacto2.png" alt=" logo de persona" />
+              </div>
+              <ul>
+                <li>
+                  <img src="../imagenes/privade.png" alt=" logo de auricular" />
+                  0810-422-605
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Pie de pagina -->
-    <footer class="bg-gradient">         
-        <div class="container">
-            <div class="row footer-padding text-white">
-                <div class="footer-div-box" >
-                    <div><img class="" src="../imagenes/gmail.png" alt="icono con forma de M"></div>
-                    <ul>
-                        <li>mauri4@outlook.com.ar</li>
-                        <li>mauri4.mp1@gmail.com</li>
-                        <li>jorgepalma2154@gmail.com</li>
-                    </ul> 
-                </div>        
-                <div class="footer-div-box">
-                    <img src="../imagenes/facebook.png" alt="icono con una letra F">
-                    <img src="../imagenes/twitter.png" alt="icono de un pajaro">
-                    <img src="../imagenes/instagram.png" alt="icono de una camara">
-                    <ul>
-                        <li>www.facebook.com</li>
-                        <li>www.twitter.com</li>
-                        <li>www.instagram.com</li>
-                    </ul>
-                </div>
-                <div class="footer-div-box">
-                    <img src="../imagenes/otros.png" alt="icono abstracto">
-                    <ul> 
-                        <li>Aviso legal</li>
-                        <li>Politicas de Privacidad</li>
-                        <li>Politicas de Cookies</li>
-                    </ul> 
-                </div>
+    <footer class="bg-gradient">
+      <div class="container">
+        <div class="row footer-padding text-white">
+          <div class="footer-div-box">
+            <div>
+              <img
+                class=""
+                src="../imagenes/gmail.png"
+                alt="icono con forma de M"
+              />
             </div>
-        </div>   
-        <div class="container padding">
-            <div class="row align-items-center text-center justify-content-center">
-                <div class="col-lg-2 col-md-12">
-                    <h3><a class="text-decoration" href="../index.html">Mi Antivirus</a></h3>                                           
-                </div>
-                <div class="col-lg-1 col-md-12">
-                    <img class="footer-icon-title" src="../imagenes/I-M-A.png" alt="Simbolo correcto rodeado de un circulo"> 
-                </div>
-            </div>
+            <ul>
+              <li>mauri4@outlook.com.ar</li>
+              <li>mauri4.mp1@gmail.com</li>
+              <li>jorgepalma2154@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer-div-box">
+            <img src="../imagenes/facebook.png" alt="icono con una letra F" />
+            <img src="../imagenes/twitter.png" alt="icono de un pajaro" />
+            <img src="../imagenes/instagram.png" alt="icono de una camara" />
+            <ul>
+              <li>www.facebook.com</li>
+              <li>www.twitter.com</li>
+              <li>www.instagram.com</li>
+            </ul>
+          </div>
+          <div class="footer-div-box">
+            <img src="../imagenes/otros.png" alt="icono abstracto" />
+            <ul>
+              <li>Aviso legal</li>
+              <li>Politicas de Privacidad</li>
+              <li>Politicas de Cookies</li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="container padding">
+        <div class="row align-items-center text-center justify-content-center">
+          <div class="col-lg-2 col-md-12">
+            <h3>
+              <a class="text-decoration" href="../index.html">Mi Antivirus</a>
+            </h3>
+          </div>
+          <div class="col-lg-1 col-md-12">
+            <img
+              class="footer-icon-title"
+              src="../imagenes/I-M-A.png"
+              alt="Simbolo correcto rodeado de un circulo"
+            />
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
-        <!-- Boostrap JS -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
-</body>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
