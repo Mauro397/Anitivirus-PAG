@@ -111,23 +111,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-main h1 {
-  animation: from 1.5s ease;
-}
-main h2 {
-  animation: from 1.5s ease;
-}
-main h3 {
-  animation: from 1.5s ease;
-}
-main h4 {
-  animation: from 1.5s ease;
-}
-main p {
-  animation: from 1.5s ease;
-}
 main ul li {
-  animation: from 1.5s ease;
   padding-bottom: 2rem;
 }
 
